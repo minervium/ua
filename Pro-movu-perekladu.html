@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<title>Про мову перекладу</title>
+<meta name="description" content="Пояснення принципів мови перекладу ">
+<meta name="keywords" content="Мінервіум,німецька філософія">
+<meta name="author" content="Колесников Андрій Володимирович">
+<link href="favicon%2d16.png.png" rel="icon" sizes="16x16" type="image/png">
+<style>
+div#container
+{
+   width: 1100px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #1E1E1E;
+   background-image: url('images/Pro-movu-perekladu_bkgrnd.png');
+   background-repeat: repeat-x;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+h1, .h1
+{
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 20px;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   display: inline;
+}
+#wb_layWhite 
+{
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('images/Pro%2dmovu%2dperekladu_layWhite_bkgrnd.png');
+   background-repeat: repeat-x;
+   background-position: left top;
+   border: 1px solid #FFFFFF;
+   border-radius: 0px;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+   box-shadow: 0px 0px 1px #000000 inset;
+}
+#wb_layWhite div
+{
+   text-align: left;
+}
+#wb_layBlue 
+{
+   background-color: #B9D1DE;
+   background-image: none;
+   border: 1px solid #2C5687;
+   border-radius: 0px;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_layBlue div
+{
+   text-align: left;
+}
+#wb_layTitle 
+{
+   background-color: #E2EBF0;
+   background-image: none;
+   border: 1px solid #2C5687;
+   border-radius: 0px;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_layTitle div
+{
+   text-align: left;
+}
+#wb_mnuFichte
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+}
+#wb_mnuFichte ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 200px;
+}
+#wb_mnuFichte li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 4px 0px;
+   width: 200px;
+}
+#wb_mnuFichte a
+{
+   display: block;
+   color: #D3D3D3;
+   border: 0px none #366C7A;
+   background-color: #51BAD9;
+   background-image: linear-gradient(to left, #51BAD9 0%, #191919 100%);
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   width: 180px;
+   height: 66px;
+   line-height: 66px;
+   padding: 0px 0px 0px 20px;
+   vertical-align: middle;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+}
+#wb_mnuFichte li:hover a, #wb_mnuFichte a:hover, #wb_mnuFichte .active
+{
+   color: #DCDCDC;
+   border: 0px none #C0C0C0;
+   background-color: #51BAD9;
+   background-image: linear-gradient(to left, #51BAD9 0%, #191919 100%);
+}
+#wb_mnuFichte .firstmain a
+{
+   margin-top: 0px;
+}
+#wb_mnuFichte li.lastmain
+{
+   padding-bottom: 0px;
+}
+#wb_mnuFichte br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_mnuSchelling
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+}
+#wb_mnuSchelling ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 200px;
+}
+#wb_mnuSchelling li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 4px 0px;
+   width: 200px;
+}
+#wb_mnuSchelling a
+{
+   display: block;
+   color: #D3D3D3;
+   border: 0px none #366C7A;
+   background-color: #347263;
+   background-image: linear-gradient(to left, #347263 0%, #191919 100%);
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   width: 180px;
+   height: 66px;
+   line-height: 66px;
+   padding: 0px 0px 0px 20px;
+   vertical-align: middle;
+   text-align: left;
+   box-shadow: 2px 2px 2px #2F4F4F;
+}
+#wb_mnuSchelling li:hover a, #wb_mnuSchelling a:hover, #wb_mnuSchelling .active
+{
+   color: #DCDCDC;
+   border: 0px none #C0C0C0;
+   background-color: #50CAAC;
+   background-image: linear-gradient(to left, #50CAAC 0%, #191919 100%);
+}
+#wb_mnuSchelling .firstmain a
+{
+   margin-top: 0px;
+}
+#wb_mnuSchelling li.lastmain
+{
+   padding-bottom: 0px;
+}
+#wb_mnuSchelling br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_mnuRickert
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+}
+#wb_mnuRickert ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 200px;
+}
+#wb_mnuRickert li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 4px 0px;
+   width: 200px;
+}
+#wb_mnuRickert a
+{
+   display: block;
+   color: #D3D3D3;
+   border: 0px none #366C7A;
+   background-color: #62761C;
+   background-image: linear-gradient(to left, #62761C 0%, #191919 100%);
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   width: 180px;
+   height: 66px;
+   line-height: 66px;
+   padding: 0px 0px 0px 20px;
+   vertical-align: middle;
+   text-align: left;
+   box-shadow: 2px 2px 2px #2F4F4F;
+}
+#wb_mnuRickert li:hover a, #wb_mnuRickert a:hover, #wb_mnuRickert .active
+{
+   color: #DCDCDC;
+   border: 0px none #C0C0C0;
+   background-color: #ABD221;
+   background-image: linear-gradient(to left, #ABD221 0%, #191919 100%);
+}
+#wb_mnuRickert .firstmain a
+{
+   margin-top: 0px;
+}
+#wb_mnuRickert li.lastmain
+{
+   padding-bottom: 0px;
+}
+#wb_mnuRickert br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_mnuHusserl
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+}
+#wb_mnuHusserl ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 200px;
+}
+#wb_mnuHusserl li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 4px 0px;
+   width: 200px;
+}
+#wb_mnuHusserl a
+{
+   display: block;
+   color: #D3D3D3;
+   border: 0px none #366C7A;
+   background-color: #8C6611;
+   background-image: linear-gradient(to left, #8C6611 0%, #191919 100%);
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   width: 180px;
+   height: 66px;
+   line-height: 66px;
+   padding: 0px 0px 0px 20px;
+   vertical-align: middle;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+}
+#wb_mnuHusserl li:hover a, #wb_mnuHusserl a:hover, #wb_mnuHusserl .active
+{
+   color: #DCDCDC;
+   border: 0px none #C0C0C0;
+   background-color: #FFB209;
+   background-image: linear-gradient(to left, #FFB209 0%, #191919 100%);
+}
+#wb_mnuHusserl .firstmain a
+{
+   margin-top: 0px;
+}
+#wb_mnuHusserl li.lastmain
+{
+   padding-bottom: 0px;
+}
+#wb_mnuHusserl br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_mnuHartmann
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+}
+#wb_mnuHartmann ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 200px;
+}
+#wb_mnuHartmann li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 4px 0px;
+   width: 200px;
+}
+#wb_mnuHartmann a
+{
+   display: block;
+   color: #D3D3D3;
+   border: 0px none #366C7A;
+   background-color: #8B3422;
+   background-image: linear-gradient(to left, #8B3422 0%, #191919 100%);
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   width: 180px;
+   height: 66px;
+   line-height: 66px;
+   padding: 0px 0px 0px 20px;
+   vertical-align: middle;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+}
+#wb_mnuHartmann li:hover a, #wb_mnuHartmann a:hover, #wb_mnuHartmann .active
+{
+   color: #DCDCDC;
+   border: 0px none #C0C0C0;
+   background-color: #FC502D;
+   background-image: linear-gradient(to left, #FC502D 0%, #191919 100%);
+}
+#wb_mnuHartmann .firstmain a
+{
+   margin-top: 0px;
+}
+#wb_mnuHartmann li.lastmain
+{
+   padding-bottom: 0px;
+}
+#wb_mnuHartmann br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_mnuOther
+{
+   border: 0px solid #C0C0C0;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+}
+#wb_mnuOther ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 200px;
+}
+#wb_mnuOther li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 4px 0px;
+   width: 200px;
+}
+#wb_mnuOther a
+{
+   display: block;
+   color: #D3D3D3;
+   border: 0px none #366C7A;
+   background-color: #9F0000;
+   background-image: linear-gradient(to left, #9F0000 0%, #191919 100%);
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   width: 180px;
+   height: 66px;
+   line-height: 66px;
+   padding: 0px 0px 0px 20px;
+   vertical-align: middle;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+}
+#wb_mnuOther li:hover a, #wb_mnuOther a:hover, #wb_mnuOther .active
+{
+   color: #DCDCDC;
+   border: 0px none #C0C0C0;
+   background-color: #FF0000;
+   background-image: linear-gradient(to left, #FF0000 0%, #191919 100%);
+}
+#wb_mnuOther .firstmain a
+{
+   margin-top: 0px;
+}
+#wb_mnuOther li.lastmain
+{
+   padding-bottom: 0px;
+}
+#wb_mnuOther br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_imgShapka
+{
+   vertical-align: top;
+}
+#imgShapka
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TabMenuMain
+{
+   float: left;
+   width: 100%;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: normal;
+}
+#TabMenuMain ul
+{
+   margin: 0;
+   padding: 10px 0 3px 10px;
+   list-style: none;
+}
+#TabMenuMain li
+{
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#TabMenuMain a
+{
+   float: left;
+   background: url("images/style02left.gif") no-repeat left top;
+   margin: 0;
+   padding: 0 0 0 4px;
+   text-decoration: none;
+}
+#TabMenuMain a span
+{
+   float: none;
+   display: block;
+   background: url("images/style02right.gif") no-repeat right top;
+   margin-right: 30px;
+   padding: 5px 14px 4px 10px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#TabMenuMain a:hover span
+{
+   background-position: 100% -42px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#TabMenuMain a:hover
+{
+   background-position: 0% -42px;
+}
+#TabMenuMain #active a
+{
+   background-position: 0% -84px;
+}
+#TabMenuMain #active a span
+{
+   background-position: 100% -84px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#TabMenuMain
+{
+}
+#TabMenuMain a span
+{
+   color: #FFFFFF;
+}
+#TabMenuMain a:hover span
+{
+   color: #FFFFFF;
+}
+#TabMenuMain #active a span
+{
+   color: #FFFFFF;
+}
+#wb_imgZvezda_L
+{
+   vertical-align: top;
+}
+#imgZvezda_L
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_imgZvezda_R
+{
+   vertical-align: top;
+}
+#imgZvezda_R
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_txtCopyright 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_txtCopyright div
+{
+   text-align: left;
+}
+#wb_txtKnigi 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_txtKnigi div
+{
+   text-align: left;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: justify;
+}
+#wb_Text1
+{
+   color: #000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 20px;
+}
+#wb_Text1 p, #wb_Text1 ul
+{
+   margin: 0;
+   padding: 0;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:943px;z-index:11;">
+&nbsp;</div>
+<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:923px;z-index:12;">
+&nbsp;</div>
+<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:902px;z-index:13;">
+&nbsp;</div>
+<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:14;">
+<div id="wb_mnuFichte" style="position:absolute;left:9px;top:9px;width:200px;height:70px;z-index:0;">
+<ul id="mnuFichte" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./Fichte.html" target="_self">Переклади&nbsp;Й.Ґ.Фіхте</a>
+</li>
+</ul>
+</div>
+<div id="wb_mnuSchelling" style="position:absolute;left:9px;top:79px;width:200px;height:70px;z-index:1;">
+<ul id="mnuSchelling" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Переклади&nbsp;Ф.В.Й.&nbsp;Шеллінґа</a>
+</li>
+</ul>
+</div>
+<div id="wb_mnuRickert" style="position:absolute;left:9px;top:149px;width:200px;height:70px;z-index:2;">
+<ul id="mnuRickert" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Переклади&nbsp;Г.&nbsp;Рікерта</a>
+</li>
+</ul>
+</div>
+<div id="wb_mnuHusserl" style="position:absolute;left:9px;top:219px;width:200px;height:70px;z-index:3;">
+<ul id="mnuHusserl" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Переклади&nbsp;Е.&nbsp;Гуссерля</a>
+</li>
+</ul>
+</div>
+<div id="wb_mnuHartmann" style="position:absolute;left:9px;top:289px;width:200px;height:70px;z-index:4;">
+<ul id="mnuHartmann" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Переклади&nbsp;Н.&nbsp;Гартманна</a>
+</li>
+</ul>
+</div>
+<div id="wb_mnuOther" style="position:absolute;left:9px;top:359px;width:200px;height:70px;z-index:5;">
+<ul id="mnuOther" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="" target="_self">Інші&nbsp;переклади</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:15;">
+<div id="wb_imgShapka" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:6;">
+<img src="images/Shapka.png" id="imgShapka" alt="" width="1100" height="175"></div>
+<div id="wb_TabMenuMain" style="position:absolute;left:58px;top:1px;width:523px;height:36px;z-index:7;">
+<div id="TabMenuMain">
+<ul>
+<li><a href="./index.html"><span>Головна</span></a></li>
+<li><a href="#"><span>Контакти</span></a></li>
+<li><a href="#"><span>Допомога</span></a></li>
+<li><a href="#"><span>Про сайт</span></a></li>
+</ul>
+</div></div>
+<div id="wb_imgZvezda_L" style="position:absolute;left:261px;top:45px;width:95px;height:80px;z-index:8;">
+<img src="images/Zvezda_L.gif" id="imgZvezda_L" alt="" width="95" height="80"></div>
+<div id="wb_imgZvezda_R" style="position:absolute;left:681px;top:45px;width:95px;height:80px;z-index:9;">
+<img src="images/Zvezda_R.gif" id="imgZvezda_R" alt="" width="95" height="80"></div>
+
+</div>
+<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1135px;width:137px;height:13px;z-index:16;">
+<span style="color:#C0C0C0;font-family:Tahoma;font-size:11px;">© 2026 Minervium</span></div>
+<div id="wb_txtKnigi" style="position:absolute;left:536px;top:207px;width:215px;height:22px;z-index:17;">
+<h1>Про мову перекладу</h1></div>
+
+<div id="wb_Text1" style="position:absolute;left:255px;top:236px;width:802px;height:859px;text-align:justify;z-index:19;">
+<p style="text-indent:22.67px;">У цьому перекладі німецькі активні дієприкметники теперішнього часу (Partizip I) здебільшого передаються українськими активними дієприкметниками, навіть у тих випадках, коли це суперечить поширеним на сьогодні нормативним рекомендаціям сучасної української мови. Такий підхід є свідомим і зумовлений як загальними міркуваннями мовного розвитку, так і специфікою філософського тексту.</p>
+<p style="text-indent:22.67px;">&nbsp;</p>
+<p style="text-indent:22.67px;">По-перше, всі синтетичні мови, зокрема й українська, у довготривалій перспективі еволюціонують у напрямку аналітизму. Цей процес не є рівномірним і може супроводжуватися тимчасовими зворотними тенденціями, однак у цілому він є історично стійким і добре засвідченим у мовах Європи.</p>
+<p style="text-indent:22.67px;">&nbsp;</p>
+<p style="text-indent:22.67px;">По-друге, в усіх сучасних аналітичних мовах – англійській, французькій, а серед слов’янських передусім у болгарській – активні дієприкметники теперішнього часу не лише збережені, але й виконують широкий спектр граматичних функцій, зокрема беруть участь у формуванні часових дієслівних конструкцій. При цьому в цих мовах повністю відсутня категорія дієприслівника. Звідси випливає припущення, що саме активні дієприкметники мають перспективне майбутнє в розвитку мови, тоді як дієприслівникові конструкції, ймовірно, такої перспективи не мають.</p>
+<p style="text-indent:22.67px;">&nbsp;</p>
+<p style="text-indent:22.67px;">По-третє, автор цього перекладу свідомо долучається до тенденції відновлення активних дієприкметників у наукових і філософських текстах українською мовою. У філософському дискурсі вони часто є незамінними, оскільки дозволяють передавати процесуальні, онтологічні та структурні смислові відтінки, які важко або неможливо адекватно відтворити за допомогою описових конструкцій типу “що + дієслово” без втрати лаконізму й концептуальної точності.</p>
+<p style="text-indent:22.67px;">У 20–30-ті роки XX ст. з’являються твердження, що українській мові невластиві активні дієприкметники теперішнього часу, і тому наявність таких форм у мовленні (текстах) слід кваліфікувати як анормативні. Подібні думки не пережили себе і в наш час. Однак невизнання активних дієприкметників в українській мові суперечить самій мовній практиці. Активні дієприкметники теперішнього часу досить часто вживаються видатними майстрами слова (Т. Шевченком, І. Франком, М. Коцюбинським, О. Гончаром, М. Стельмахом та ін.).</p>
+<p style="text-indent:22.67px;">Українська народна мова свого часу втратила активні дієприкметники теперішнього часу на <span style="font-weight:bold;font-style:italic;">-ч(ий)</span>. Тому й нова українська літературна мова, що сформувалася на народній основі, в епоху свого становлення (кінець XVIII – початок XIX ст.) не була зорієнтована на ці форми. Причини зрозумілі. Дієприкметникові форми – це форми книжного вжитку, а тогочасна українська літературна мова розвивалась у жанрах, що ґрунтувались на розмовному мовленні, зокрема у жанрі художньої літератури. Оскільки не було умов для розвитку книжних стилів української літературної мови, то й активні дієприкметники теперішнього часу не знайшли у той час значного поширення.</p>
+<p style="text-indent:22.67px;">Розвиток книжних стилів, офіційно-ділового, наукового, публіцистичного у радянський час потребував удосконалення стилістично-виражальних засобів, а це приводить до відновлення староукраїнської традиції творення активних дієприкметників на <span style="font-weight:bold;font-style:italic;">-ч(ий)</span>. </p>
+<p style="text-indent:22.67px;">&nbsp;</p>
+<p style="text-indent:22.67px;">По-четверте, обраний підхід продовжує перекладацьку традицію, започатковану професором Іваном Мірчуком, під редакцією якого у 1930 році було опубліковано переклад Канта «Пролєґомена до кожної майбутньої метафізики, яка могтиме виступати як наука». У цьому перекладі німецькі активні дієприкметники систематично передано українськими активними дієприкметниками, і ця практика була збережена також у пізніших перевиданнях. Автор перекладу вважає цю традицію філологічно обґрунтованою та актуальною й сьогодні.</p>
+<p style="font-family:Arial;font-size:13px;line-height:16px;">&nbsp;</p></div>
+</div>
+</body>
+</html>
