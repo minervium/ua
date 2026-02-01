@@ -22,34 +22,12 @@ body
    background-image: url('images/Fichte-Pro-hidnist-liudyny_bkgrnd.png');
    background-repeat: repeat-x;
    color: #000000;
-   font-family: Arial;
+   font-family: "Times New Roman";
    font-weight: normal;
-   font-size: 13px;
+   font-size: 17px;
    line-height: 1.1875;
    margin: 0;
    text-align: center;
-}
-a
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
-}
-a:hover
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-input:focus, textarea:focus, select:focus
-{
-   outline: none;
 }
 h1, .h1
 {
@@ -58,6 +36,7 @@ h1, .h1
    font-size: 20px;
    text-decoration: none;
    color: #000000;
+   --color: #000000;
    background-color: transparent;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
@@ -70,6 +49,7 @@ h2, .h2
    font-size: 16px;
    text-decoration: none;
    color: #FFFFFF;
+   --color: #FFFFFF;
    background-color: transparent;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
@@ -142,6 +122,7 @@ h2, .h2
 #wb_mnuFichte
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -151,13 +132,14 @@ h2, .h2
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuFichte li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -166,7 +148,8 @@ h2, .h2
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #51BAD9;
    background-image: linear-gradient(to left, #51BAD9 0%, #191919 100%);
    font-family: Arial;
@@ -174,18 +157,22 @@ h2, .h2
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuFichte > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuFichte li:hover a, #wb_mnuFichte a:hover, #wb_mnuFichte .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #51BAD9;
    background-image: linear-gradient(to left, #51BAD9 0%, #191919 100%);
 }
@@ -207,6 +194,7 @@ h2, .h2
 #wb_mnuSchelling
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -216,13 +204,14 @@ h2, .h2
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuSchelling li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -231,7 +220,8 @@ h2, .h2
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #347263;
    background-image: linear-gradient(to left, #347263 0%, #191919 100%);
    font-family: Arial;
@@ -239,18 +229,22 @@ h2, .h2
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #2F4F4F;
+   vertical-align: middle;
+}
+#wb_mnuSchelling > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #2F4F4F;
 }
 #wb_mnuSchelling li:hover a, #wb_mnuSchelling a:hover, #wb_mnuSchelling .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #50CAAC;
    background-image: linear-gradient(to left, #50CAAC 0%, #191919 100%);
 }
@@ -272,6 +266,7 @@ h2, .h2
 #wb_mnuRickert
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -281,13 +276,14 @@ h2, .h2
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuRickert li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -296,7 +292,8 @@ h2, .h2
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #62761C;
    background-image: linear-gradient(to left, #62761C 0%, #191919 100%);
    font-family: Arial;
@@ -304,18 +301,22 @@ h2, .h2
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #2F4F4F;
+   vertical-align: middle;
+}
+#wb_mnuRickert > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #2F4F4F;
 }
 #wb_mnuRickert li:hover a, #wb_mnuRickert a:hover, #wb_mnuRickert .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #ABD221;
    background-image: linear-gradient(to left, #ABD221 0%, #191919 100%);
 }
@@ -337,6 +338,7 @@ h2, .h2
 #wb_mnuHusserl
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -346,13 +348,14 @@ h2, .h2
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuHusserl li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -361,7 +364,8 @@ h2, .h2
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #8C6611;
    background-image: linear-gradient(to left, #8C6611 0%, #191919 100%);
    font-family: Arial;
@@ -369,18 +373,22 @@ h2, .h2
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuHusserl > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuHusserl li:hover a, #wb_mnuHusserl a:hover, #wb_mnuHusserl .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #FFB209;
    background-image: linear-gradient(to left, #FFB209 0%, #191919 100%);
 }
@@ -402,6 +410,7 @@ h2, .h2
 #wb_mnuHartmann
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -411,13 +420,14 @@ h2, .h2
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuHartmann li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -426,7 +436,8 @@ h2, .h2
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #8B3422;
    background-image: linear-gradient(to left, #8B3422 0%, #191919 100%);
    font-family: Arial;
@@ -434,18 +445,22 @@ h2, .h2
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuHartmann > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuHartmann li:hover a, #wb_mnuHartmann a:hover, #wb_mnuHartmann .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #FC502D;
    background-image: linear-gradient(to left, #FC502D 0%, #191919 100%);
 }
@@ -467,6 +482,7 @@ h2, .h2
 #wb_mnuOther
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -476,13 +492,14 @@ h2, .h2
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuOther li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -491,7 +508,8 @@ h2, .h2
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #9F0000;
    background-image: linear-gradient(to left, #9F0000 0%, #191919 100%);
    font-family: Arial;
@@ -499,18 +517,22 @@ h2, .h2
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuOther > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuOther li:hover a, #wb_mnuOther a:hover, #wb_mnuOther .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #FF0000;
    background-image: linear-gradient(to left, #FF0000 0%, #191919 100%);
 }
@@ -537,6 +559,7 @@ h2, .h2
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -553,71 +576,90 @@ h2, .h2
    font-size: 13px;
    line-height: normal;
 }
+
 #TabMenuMain ul
 {
    margin: 0;
    padding: 10px 0 3px 10px;
    list-style: none;
 }
+
 #TabMenuMain li
 {
-   display: inline;
-   margin: 0;
+   float: left;
+   margin: 0 30px 0 0;
    padding: 0;
 }
+
 #TabMenuMain a
 {
-   float: left;
-   background: url("images/style02left.gif") no-repeat left top;
-   margin: 0;
-   padding: 0 0 0 4px;
-   text-decoration: none;
-}
-#TabMenuMain a span
-{
-   float: none;
    display: block;
-   background: url("images/style02right.gif") no-repeat right top;
-   margin-right: 30px;
-   padding: 5px 14px 4px 10px;
+   float: none;
+   margin: 0;
+   padding: 0px 0px 0px 4px;
+  white-space: nowrap;
+   background-image: url("images/style02left.gif");
+   background-position: left 0 top 0%;
+   background-repeat: no-repeat;
+   background-origin: padding-box;
+   background-clip:   padding-box;
+   background-size: 4px 300%;
    font-weight: bold;
    font-style: normal;
    text-decoration: none;
 }
-#TabMenuMain a:hover span
-{
-   background-position: 100% -42px;
-   font-weight: bold;
-   font-style: normal;
-   text-decoration: none;
-}
+
 #TabMenuMain a:hover
 {
-   background-position: 0% -42px;
-}
-#TabMenuMain #active a
-{
-   background-position: 0% -84px;
-}
-#TabMenuMain #active a span
-{
-   background-position: 100% -84px;
+   background-position: left 0 top 50%;
    font-weight: bold;
    font-style: normal;
    text-decoration: none;
 }
+
+#TabMenuMain #active a
+{
+   background-position: left 0 top 100%;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+
+#TabMenuMain a span
+{
+   display: block;
+   margin: 0 0 0 -1px;
+   padding: 5px 14px 4px 15px;
+   background-image: url("images/style02right.gif"), url("images/style02right.gif");
+   background-position: right 0 top 0%, left 0 top 0%;
+   background-repeat: no-repeat, no-repeat;
+   background-origin: padding-box, padding-box;
+   background-clip:   padding-box, padding-box;
+   background-size: 175px 300%, calc(100% - 4px)  300%;
+}
+
+#TabMenuMain a:hover span
+{
+   background-position: right 0 top 50%, left 0 top 50%;
+}
+
+#TabMenuMain #active a span
+{
+   background-position: right 0 top 100%, left 0 top 100%;
+}
+
 #TabMenuMain
 {
 }
-#TabMenuMain a span
+#TabMenuMain a
 {
    color: #FFFFFF;
 }
-#TabMenuMain a:hover span
+#TabMenuMain a:hover
 {
    color: #FFFFFF;
 }
-#TabMenuMain #active a span
+#TabMenuMain #active a
 {
    color: #FFFFFF;
 }
@@ -629,6 +671,7 @@ h2, .h2
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -644,6 +687,7 @@ h2, .h2
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -702,6 +746,7 @@ h2, .h2
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -732,6 +777,7 @@ h2, .h2
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -768,7 +814,7 @@ h2, .h2
 {
    color: #000000;
    font-family: "Times New Roman";
-   font-weight: normal;
+   font-weight: 400;
    font-size: 16px;
    line-height: 18px;
 }
@@ -787,47 +833,23 @@ h2, .h2
    margin: 0;
    text-align: left;
 }
-#wb_txtMova
+#wb_txtMova div
 {
-   color: #000000;
-   font-family: "Times New Roman";
-   font-weight: normal;
-   font-size: 17px;
-   line-height: 20px;
-}
-#wb_txtMova p, #wb_txtMova ul
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_imgProMovu
-{
-   vertical-align: top;
-}
-#imgProMovu
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   text-align: left;
 }
 </style>
 </head>
 <body>
 <div id="container">
-<div id="wb_layContent" style="position:absolute;left:243px;top:327px;width:679px;height:489px;z-index:11;">
+<div id="wb_layContent" style="position:absolute;left:243px;top:327px;width:679px;height:489px;z-index:10;">
 &nbsp;</div>
-<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:847px;z-index:12;">
+<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:847px;z-index:11;">
 &nbsp;</div>
-<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:827px;z-index:13;">
+<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:827px;z-index:12;">
 &nbsp;</div>
-<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:806px;z-index:14;">
+<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:806px;z-index:13;">
 &nbsp;</div>
-<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:15;">
+<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:14;">
 <div id="wb_mnuFichte" style="position:absolute;left:9px;top:9px;width:200px;height:70px;z-index:0;">
 <ul id="mnuFichte" role="menubar" class="nav">
 <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./../Fichte.html" target="_self">Переклади&nbsp;Й.Ґ.Фіхте</a>
@@ -865,7 +887,7 @@ h2, .h2
 </ul>
 </div>
 </div>
-<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:16;">
+<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:15;">
 <div id="wb_imgShapka" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:6;">
 <img src="images/Shapka.png" id="imgShapka" alt="" width="1100" height="175"></div>
 <div id="wb_TabMenuMain" style="position:absolute;left:58px;top:1px;width:523px;height:36px;z-index:7;">
@@ -881,23 +903,22 @@ h2, .h2
 <img src="images/Zvezda_L.gif" id="imgZvezda_L" alt="" width="95" height="80"></div>
 <div id="wb_imgZvezda_R" style="position:absolute;left:681px;top:45px;width:95px;height:80px;z-index:9;">
 <img src="images/Zvezda_R.gif" id="imgZvezda_R" alt="" width="95" height="80"></div>
-
 </div>
-<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1034px;width:137px;height:13px;z-index:17;">
+<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1034px;width:137px;height:13px;z-index:16;">
 <span style="color:#C0C0C0;font-family:Tahoma;font-size:11px;">© 2026 Minervium</span></div>
-<div id="wb_Text1" style="position:absolute;left:243px;top:206px;width:819px;height:68px;z-index:18;">
+<div id="wb_Text1" style="position:absolute;left:243px;top:206px;width:819px;height:68px;z-index:17;">
 &nbsp;</div>
-<div id="wb_txtTitle" style="position:absolute;left:255px;top:217px;width:577px;height:45px;z-index:19;">
+<div id="wb_txtTitle" style="position:absolute;left:255px;top:217px;width:577px;height:45px;z-index:18;">
 <h1>Фіхте, Йоганн Ґотліб<br>Про гідність людини (Über die Würde des Menschen, 1794)</h1></div>
-<div id="wb_DownloadPDF" style="position:absolute;left:980px;top:207px;width:70px;height:70px;z-index:20;">
+<div id="wb_DownloadPDF" style="position:absolute;left:980px;top:207px;width:70px;height:70px;z-index:19;">
 <a href="https://minervium.github.io/ua/pdf/Й. Ґ. Фіхте. Про гідність людини.pdf"><img src="images/&#1047;&#1072;&#1074;&#1072;&#1085;&#1090;&#1072;&#1078;&#1080;&#1090;&#1080;%20PDF.png" id="DownloadPDF" alt="Завантажити PDF" title="Завантажити PDF" width="70" height="70"></a></div>
-<div id="wb_layFrag" style="position:absolute;left:243px;top:349px;width:819px;height:641px;z-index:21;">
+<div id="wb_layFrag" style="position:absolute;left:243px;top:349px;width:819px;height:641px;z-index:20;">
 &nbsp;</div>
-<div id="wb_shFrag" style="position:absolute;left:243px;top:349px;width:821px;height:37px;z-index:22;">
+<div id="wb_shFrag" style="position:absolute;left:243px;top:349px;width:821px;height:37px;z-index:21;">
 <img src="images/Lenta.png" id="shFrag" alt="" width="821" height="45"></div>
-<div id="wb_lblFrag" style="position:absolute;left:276px;top:357px;width:629px;height:18px;z-index:23;">
+<div id="wb_lblFrag" style="position:absolute;left:276px;top:357px;width:629px;height:18px;z-index:22;">
 <h2>Про гідність людини</h2></div>
-<div id="wb_Text2" style="position:absolute;left:258px;top:394px;width:784px;height:588px;text-align:justify;z-index:24;">
+<div id="wb_Text2" style="position:absolute;left:258px;top:394px;width:784px;height:588px;text-align:justify;z-index:23;">
 <p style="text-indent:22.67px;">Переклад виконаний А. В. Колесниковим за виданням: <span style="font-style:italic;">Fichte J. G.</span> Sämtliche Werke: Bd. 1–8 / Hrsg. von I. H. Fichte. Berlin: Veit 1845–1846. Bd. I. S. 412–416.</p>
 <p style="font-size:17px;line-height:20px;text-indent:22.67px;">&nbsp;</p>
 <p style="font-size:17px;line-height:20px;text-indent:22.67px;">Промовлено Й. Ґ. Фіхте на закінчення його філософських лекцій. 1794</p>
@@ -918,11 +939,8 @@ h2, .h2
 <p style="text-indent:22.67px;">*) Навіть не знаючи моєї системи, неможливо вважати цю думку спінозистською, якщо тільки принаймні хочуть оглянути хід цього міркування в цілому. Єдність чистого духу є для мене <span style="font-style:italic;">недосяжним ідеалом</span>; кінцевою метою, яка, однак, ніколи не стає дійсною.</p>
 <p style="font-family:Arial;font-size:13px;line-height:16px;">&nbsp;</p></div>
 
-<div id="wb_txtMova" style="position:absolute;left:262px;top:281px;width:804px;height:154px;z-index:26;">
-<p style="font-weight:bold;">Зауваження щодо мови перекладу.</p>
-<p style="font-family:Arial;font-size:13px;line-height:16px;"><span style="font-family:Times New Roman;font-size:17px;line-height:20px;">У перекладі використано мовні рішення, що можуть відрізнятися від сучасних нормативних рекомендацій. Пояснення принципів мови перекладу подано на окремій сторінці:</span></p></div>
-<div id="wb_imgProMovu" style="position:absolute;left:773px;top:322px;width:206px;height:26px;z-index:27;">
-<a href="./../Pro-movu-perekladu.html" target="_blank"><img src="images/ProMovu.png" id="imgProMovu" alt="" width="206" height="26"></a></div>
+<div id="wb_txtMova" style="position:absolute;left:258px;top:280px;width:804px;height:58px;z-index:25;">
+<span style="color:#000000;font-family:'Times New Roman';font-size:17px;"><strong>Зауваження щодо мови перекладу.<br></strong>У перекладі використано мовні рішення, що можуть відрізнятися від сучасних нормативних рекомендацій. Пояснення принципів мови перекладу подано на окремій сторінці: <a href="./../Pro-movu-perekladu.html" target="_blank">Про мову перекладу</a></span></div>
 </div>
 </body>
 </html>
