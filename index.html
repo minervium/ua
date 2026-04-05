@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="uk">
 <head>
-<meta name="yandex-verification" content="2b3272584cfe8dcb" />
 <meta charset="utf-8">
 <title>Філософський сайт "Мінервіум"</title>
 <meta name="description" content="На сайті можна читати онлайн і завантажити переклади творів німецьких філософів">
@@ -9,8 +8,6 @@
 <meta name="author" content="Колесников Андрій Володимирович">
 <meta name="categories" content="філософія,онтологія, гносеологія, логіка, етика, естетика">
 <link href="favicon%2d16.png.png" rel="icon" sizes="16x16" type="image/png">
-<link href="favicon%2d32.png.png" rel="icon" sizes="32x32" type="image/png">
-<link href="favicon%2d64.png.png" rel="icon" sizes="64x64" type="image/png">
 <style>
 div#container
 {
@@ -31,28 +28,6 @@ body
    line-height: 1.1875;
    margin: 0;
    text-align: center;
-}
-a
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
-}
-a:hover
-{
-   color: #0000FF;
-   text-decoration: underline;
-}
-input:focus, textarea:focus, select:focus
-{
-   outline: none;
 }
 #wb_layWhite 
 {
@@ -106,6 +81,7 @@ input:focus, textarea:focus, select:focus
 #wb_mnuFichte
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -115,13 +91,14 @@ input:focus, textarea:focus, select:focus
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuFichte li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -130,7 +107,8 @@ input:focus, textarea:focus, select:focus
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #346A79;
    background-image: linear-gradient(to left, #346A79 0%, #191919 100%);
    font-family: Arial;
@@ -138,18 +116,22 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuFichte > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuFichte li:hover a, #wb_mnuFichte a:hover, #wb_mnuFichte .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #51BAD9;
    background-image: linear-gradient(to left, #51BAD9 0%, #191919 100%);
 }
@@ -171,6 +153,7 @@ input:focus, textarea:focus, select:focus
 #wb_mnuSchelling
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -180,13 +163,14 @@ input:focus, textarea:focus, select:focus
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuSchelling li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -195,7 +179,8 @@ input:focus, textarea:focus, select:focus
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #347263;
    background-image: linear-gradient(to left, #347263 0%, #191919 100%);
    font-family: Arial;
@@ -203,18 +188,22 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #2F4F4F;
+   vertical-align: middle;
+}
+#wb_mnuSchelling > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #2F4F4F;
 }
 #wb_mnuSchelling li:hover a, #wb_mnuSchelling a:hover, #wb_mnuSchelling .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #50CAAC;
    background-image: linear-gradient(to left, #50CAAC 0%, #191919 100%);
 }
@@ -236,6 +225,7 @@ input:focus, textarea:focus, select:focus
 #wb_mnuRickert
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -245,13 +235,14 @@ input:focus, textarea:focus, select:focus
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuRickert li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -260,7 +251,8 @@ input:focus, textarea:focus, select:focus
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #62761C;
    background-image: linear-gradient(to left, #62761C 0%, #191919 100%);
    font-family: Arial;
@@ -268,18 +260,22 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #2F4F4F;
+   vertical-align: middle;
+}
+#wb_mnuRickert > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #2F4F4F;
 }
 #wb_mnuRickert li:hover a, #wb_mnuRickert a:hover, #wb_mnuRickert .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #ABD221;
    background-image: linear-gradient(to left, #ABD221 0%, #191919 100%);
 }
@@ -301,6 +297,7 @@ input:focus, textarea:focus, select:focus
 #wb_mnuHusserl
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -310,13 +307,14 @@ input:focus, textarea:focus, select:focus
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuHusserl li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -325,7 +323,8 @@ input:focus, textarea:focus, select:focus
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #8C6611;
    background-image: linear-gradient(to left, #8C6611 0%, #191919 100%);
    font-family: Arial;
@@ -333,18 +332,22 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuHusserl > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuHusserl li:hover a, #wb_mnuHusserl a:hover, #wb_mnuHusserl .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #FFB209;
    background-image: linear-gradient(to left, #FFB209 0%, #191919 100%);
 }
@@ -366,6 +369,7 @@ input:focus, textarea:focus, select:focus
 #wb_mnuHartmann
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -375,13 +379,14 @@ input:focus, textarea:focus, select:focus
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuHartmann li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -390,7 +395,8 @@ input:focus, textarea:focus, select:focus
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #8B3422;
    background-image: linear-gradient(to left, #8B3422 0%, #191919 100%);
    font-family: Arial;
@@ -398,18 +404,22 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuHartmann > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuHartmann li:hover a, #wb_mnuHartmann a:hover, #wb_mnuHartmann .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #FC502D;
    background-image: linear-gradient(to left, #FC502D 0%, #191919 100%);
 }
@@ -431,6 +441,7 @@ input:focus, textarea:focus, select:focus
 #wb_mnuOther
 {
    border: 0px solid #C0C0C0;
+   border-radius: 0px;
    background-color: transparent;
    margin: 0;
    text-align: center;
@@ -440,13 +451,14 @@ input:focus, textarea:focus, select:focus
    list-style-type: none;
    margin: 0;
    padding: 0;
+    font-size: 0;
    position: relative;
    display: inline-block;
    width: 200px;
 }
 #wb_mnuOther li
 {
-   float: left;
+   display: inline-block;
    margin: 0;
    padding: 0px 0px 4px 0px;
    width: 200px;
@@ -455,7 +467,8 @@ input:focus, textarea:focus, select:focus
 {
    display: block;
    color: #D3D3D3;
-   border: 0px none #366C7A;
+   border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #9F0000;
    background-image: linear-gradient(to left, #9F0000 0%, #191919 100%);
    font-family: Arial;
@@ -463,18 +476,22 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    font-style: normal;
    text-decoration: none;
+   text-transform: none;
+   text-align: left;
+   box-shadow: 2px 2px 2px #365F74;
+   vertical-align: middle;
+}
+#wb_mnuOther > ul > li > a
+{
    width: 180px;
    height: 66px;
    line-height: 66px;
    padding: 0px 0px 0px 20px;
-   vertical-align: middle;
-   text-align: left;
-   box-shadow: 2px 2px 2px #365F74;
 }
 #wb_mnuOther li:hover a, #wb_mnuOther a:hover, #wb_mnuOther .active
 {
    color: #DCDCDC;
-   border: 0px none #C0C0C0;
+   border: 0px solid transparent;
    background-color: #FF0000;
    background-image: linear-gradient(to left, #FF0000 0%, #191919 100%);
 }
@@ -501,6 +518,7 @@ input:focus, textarea:focus, select:focus
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -517,71 +535,90 @@ input:focus, textarea:focus, select:focus
    font-size: 13px;
    line-height: normal;
 }
+
 #TabMenuMain ul
 {
    margin: 0;
    padding: 10px 0 3px 10px;
    list-style: none;
 }
+
 #TabMenuMain li
 {
-   display: inline;
-   margin: 0;
+   float: left;
+   margin: 0 30px 0 0;
    padding: 0;
 }
+
 #TabMenuMain a
 {
-   float: left;
-   background: url("images/style02left.gif") no-repeat left top;
-   margin: 0;
-   padding: 0 0 0 4px;
-   text-decoration: none;
-}
-#TabMenuMain a span
-{
-   float: none;
    display: block;
-   background: url("images/style02right.gif") no-repeat right top;
-   margin-right: 30px;
-   padding: 5px 14px 4px 10px;
+   float: none;
+   margin: 0;
+   padding: 0px 0px 0px 4px;
+  white-space: nowrap;
+   background-image: url("images/style02left.gif");
+   background-position: left 0 top 0%;
+   background-repeat: no-repeat;
+   background-origin: padding-box;
+   background-clip:   padding-box;
+   background-size: 4px 300%;
    font-weight: bold;
    font-style: normal;
    text-decoration: none;
 }
-#TabMenuMain a:hover span
-{
-   background-position: 100% -42px;
-   font-weight: bold;
-   font-style: normal;
-   text-decoration: none;
-}
+
 #TabMenuMain a:hover
 {
-   background-position: 0% -42px;
-}
-#TabMenuMain #active a
-{
-   background-position: 0% -84px;
-}
-#TabMenuMain #active a span
-{
-   background-position: 100% -84px;
+   background-position: left 0 top 50%;
    font-weight: bold;
    font-style: normal;
    text-decoration: none;
 }
+
+#TabMenuMain #active a
+{
+   background-position: left 0 top 100%;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+
+#TabMenuMain a span
+{
+   display: block;
+   margin: 0 0 0 -1px;
+   padding: 5px 14px 4px 15px;
+   background-image: url("images/style02right.gif"), url("images/style02right.gif");
+   background-position: right 0 top 0%, left 0 top 0%;
+   background-repeat: no-repeat, no-repeat;
+   background-origin: padding-box, padding-box;
+   background-clip:   padding-box, padding-box;
+   background-size: 175px 300%, calc(100% - 4px)  300%;
+}
+
+#TabMenuMain a:hover span
+{
+   background-position: right 0 top 50%, left 0 top 50%;
+}
+
+#TabMenuMain #active a span
+{
+   background-position: right 0 top 100%, left 0 top 100%;
+}
+
 #TabMenuMain
 {
 }
-#TabMenuMain a span
+#TabMenuMain a
 {
    color: #FFFFFF;
 }
-#TabMenuMain a:hover span
+#TabMenuMain a:hover
 {
    color: #FFFFFF;
 }
-#TabMenuMain #active a span
+#TabMenuMain #active a
 {
    color: #FFFFFF;
 }
@@ -593,6 +630,7 @@ input:focus, textarea:focus, select:focus
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -608,6 +646,7 @@ input:focus, textarea:focus, select:focus
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -631,7 +670,7 @@ input:focus, textarea:focus, select:focus
 }
 #PhotoMinerva .thumbnail img
 {
-   border: 0px #365F74 solid;
+   border: 0px solid #365F74;
    box-shadow: 2px 2px 2px #000000;
    box-sizing: border-box;
    border-radius: 0px;
@@ -663,6 +702,7 @@ input:focus, textarea:focus, select:focus
 {
    border: 0px solid #000000;
    border-radius: 0px;
+   box-sizing: border-box;
    padding: 0;
    margin: 0;
    left: 0;
@@ -686,7 +726,7 @@ input:focus, textarea:focus, select:focus
 }
 #PhotoTemple .thumbnail img
 {
-   border: 0px #365F74 solid;
+   border: 0px solid #365F74;
    box-shadow: 2px 2px 2px #000000;
    box-sizing: border-box;
    border-radius: 0px;
@@ -756,13 +796,13 @@ $(document).ready(function()
 </head>
 <body>
 <div id="container">
-<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:795px;z-index:11;">
+<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:795px;z-index:10;">
 &nbsp;</div>
-<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:775px;z-index:12;">
+<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:775px;z-index:11;">
 &nbsp;</div>
-<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:754px;z-index:13;">
+<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:754px;z-index:12;">
 &nbsp;</div>
-<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:14;">
+<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:13;">
 <div id="wb_mnuFichte" style="position:absolute;left:9px;top:9px;width:200px;height:70px;z-index:0;">
 <ul id="mnuFichte" role="menubar" class="nav">
 <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./Fichte.html" target="_self">Переклади&nbsp;Й.Ґ.Фіхте</a>
@@ -800,15 +840,15 @@ $(document).ready(function()
 </ul>
 </div>
 </div>
-<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:15;">
+<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:14;">
 <div id="wb_imgShapka" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:6;">
 <img src="images/Shapka.png" id="imgShapka" alt="" width="1100" height="175"></div>
-<div id="wb_TabMenuMain" style="position:absolute;left:58px;top:1px;width:523px;height:36px;z-index:7;">
+<div id="wb_TabMenuMain" style="position:absolute;left:58px;top:1px;width:600px;height:36px;z-index:7;">
 <div id="TabMenuMain">
 <ul>
 <li id="active"><a href="./index.html"><span>Головна</span></a></li>
 <li><a href="#"><span>Контакти</span></a></li>
-<li><a href="#"><span>Допомога</span></a></li>
+<li><a href="./Pro-movu-perekladu.html"><span>Про мову перекладу</span></a></li>
 <li><a href="#"><span>Про сайт</span></a></li>
 </ul>
 </div></div>
@@ -816,29 +856,28 @@ $(document).ready(function()
 <img src="images/Zvezda_L.gif" id="imgZvezda_L" alt="" width="95" height="80"></div>
 <div id="wb_imgZvezda_R" style="position:absolute;left:681px;top:45px;width:95px;height:80px;z-index:9;">
 <img src="images/Zvezda_R.gif" id="imgZvezda_R" alt="" width="95" height="80"></div>
-
 </div>
-<div id="wb_PhotoMinerva" style="position:absolute;left:817px;top:273px;width:236px;height:285px;z-index:16;">
+<div id="wb_PhotoMinerva" style="position:absolute;left:817px;top:273px;width:236px;height:285px;z-index:15;">
 <table id="PhotoMinerva">
    <tr>
       <td class="thumbnail"><a href="images/Minerva.jpg" data-rel="PhotoMinerva" title="Віллем де Портер. Мінерва, богиня мудрості й знань"><img alt="Віллем де Портер. Мінерва, богиня мудрості й знань" id="PhotoMinerva_img0" src="images/Minerva.jpg" title="Віллем де Портер. Мінерва, богиня мудрості й знань"></a></td>
    </tr>
 </table>
 </div>
-<div id="wb_txtMinerva" style="position:absolute;left:823px;top:562px;width:232px;height:40px;z-index:17;">
+<div id="wb_txtMinerva" style="position:absolute;left:823px;top:562px;width:232px;height:40px;z-index:16;">
 <span style="color:#000000;font-family:'Palatino Linotype';font-size:15px;"><strong>Віллем де Портер </strong></span><span style="color:#000000;font-family:'Arial CYR';font-size:15px;"><strong>(1608-1668)<br></strong></span><span style="color:#000000;font-family:'Palatino Linotype';font-size:15px;">Мінерва, богиня мудрості й знань</span></div>
-<div id="wb_Image1" style="position:absolute;left:355px;top:216px;width:624px;height:27px;z-index:18;">
+<div id="wb_Image1" style="position:absolute;left:355px;top:216px;width:624px;height:27px;z-index:17;">
 <img src="images/Welcome.png" id="Image1" alt="" width="624" height="27"></div>
-<div id="wb_PhotoTemple" style="position:absolute;left:817px;top:618px;width:236px;height:285px;z-index:19;">
+<div id="wb_PhotoTemple" style="position:absolute;left:817px;top:618px;width:236px;height:285px;z-index:18;">
 <table id="PhotoTemple">
    <tr>
       <td class="thumbnail"><a href="images/Sufetula.jpg" data-rel="PhotoTemple" title="Храм Мінерви в Суфетулі. Туніс"><img alt="Храм Мінерви в Суфетулі. Туніс" id="PhotoTemple_img0" src="images/Sufetula.jpg" title="Храм Мінерви в Суфетулі. Туніс"></a></td>
    </tr>
 </table>
 </div>
-<div id="wb_txtTemple" style="position:absolute;left:829px;top:909px;width:222px;height:20px;z-index:20;">
+<div id="wb_txtTemple" style="position:absolute;left:829px;top:909px;width:222px;height:20px;z-index:19;">
 <span style="color:#000000;font-family:'Palatino Linotype';font-size:15px;">Храм Мінерви в Суфетулі. Туніс</span></div>
-<div id="wb_txtText" style="position:absolute;left:279px;top:265px;width:499px;height:514px;text-align:justify;z-index:21;">
+<div id="wb_txtText" style="position:absolute;left:279px;top:265px;width:499px;height:514px;text-align:justify;z-index:20;">
 <div style="margin-left:1px;position:absolute;left:0px;top:0px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">&nbsp;&nbsp;&nbsp; Мінерва — римська богиня мудрості й покровителька </span><span style="letter-spacing:499px;"> &nbsp; </span></div>
 <div style="margin-left:1px;position:absolute;left:0px;top:23px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">філософії. Її шанували як богиню мудрості, що навчила </span><span style="letter-spacing:499px;"> &nbsp; </span></div>
 <div style="margin-left:1px;position:absolute;left:0px;top:47px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">людей різних ремесел, мистецтв і лікарювання. Згодом її </span><span style="letter-spacing:499px;"> &nbsp; </span></div>
@@ -860,10 +899,10 @@ $(document).ready(function()
 <div style="position:absolute;left:0px;top:421px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">для нас минулими віками, пам’яток, що немов воскресають </span><span style="letter-spacing:499px;"> &nbsp; </span></div>
 <div style="position:absolute;left:0px;top:444px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">із гробниці часу думки великих мужів у різні часи й у різних </span><span style="letter-spacing:499px;"> &nbsp; </span></div>
 <div style="position:absolute;left:0px;top:468px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">країнах і становлять засіб для вивчення соціального, </span><span style="letter-spacing:499px;"> &nbsp; </span></div>
-<div style="position:absolute;left:0px;top:491px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">морального, розумового та релігійного розвитку людства.</span></div>
-</div>
-<div id="wb_txtCopyright" style="position:absolute;left:482px;top:982px;width:137px;height:13px;z-index:22;">
+<div style="position:absolute;left:0px;top:491px;width:499px;height:23px;"><span style="color:#000000;font-family:'Palatino Linotype';font-size:17px;">морального, розумового та релігійного розвитку людства.</span></div></div>
+<div id="wb_txtCopyright" style="position:absolute;left:482px;top:982px;width:137px;height:13px;z-index:21;">
 <span style="color:#C0C0C0;font-family:Tahoma;font-size:11px;">© 2026 Minervium</span></div>
+
 </div>
 </body>
 </html>
