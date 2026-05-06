@@ -2,12 +2,9 @@
 <html lang="uk">
 <head>
 <meta charset="utf-8">
-<title>Контакти</title>
-<meta name="keywords" content="Контакти">
+<title></title>
 <meta name="author" content="Колесников Андрій Володимирович">
 <link href="favicon%2d16.png.png" rel="icon" sizes="16x16" type="image/png">
-<link href="favicon%2d32.png.png" rel="icon" sizes="32x32" type="image/png">
-<link href="favicon%2d64.png.png" rel="icon" sizes="64x64" type="image/png">
 <style>
 div#container
 {
@@ -19,12 +16,12 @@ div#container
 body
 {
    background-color: #1E1E1E;
-   background-image: url('images/Kontakty_bkgrnd.png');
+   background-image: url('images/Pereklady_bkgrnd.png');
    background-repeat: repeat-x;
    color: #000000;
-   font-family: "Times New Roman";
+   font-family: Arial;
    font-weight: normal;
-   font-size: 17px;
+   font-size: 13px;
    line-height: 1.1875;
    margin: 0;
    text-align: center;
@@ -33,7 +30,7 @@ body
 {
    background-clip: padding-box;
    background-color: transparent;
-   background-image: url('images/Kontakty_layWhite_bkgrnd.png');
+   background-image: url('images/Pereklady_layWhite_bkgrnd.png');
    background-repeat: repeat-x;
    background-position: left top;
    border: 1px solid #FFFFFF;
@@ -60,6 +57,21 @@ body
    text-align: left;
 }
 #wb_layBlue div
+{
+   text-align: left;
+}
+#wb_layTitle 
+{
+   background-color: #E2EBF0;
+   background-image: none;
+   border: 1px solid #2C5687;
+   border-radius: 0px;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_layTitle div
 {
    text-align: left;
 }
@@ -454,8 +466,8 @@ body
    color: #D3D3D3;
    border: 0px solid transparent;
    border-radius: 0px;
-   background-color: #9F0000;
-   background-image: linear-gradient(to left, #9F0000 0%, #191919 100%);
+   background-color: #FF0000;
+   background-image: linear-gradient(to left, #FF0000 0%, #191919 100%);
    font-family: Arial;
    font-weight: normal;
    font-size: 13px;
@@ -663,7 +675,6 @@ body
    border-radius: 0px;
    box-sizing: border-box;
    padding: 0;
-   box-shadow: 2px 2px 2px #191970;
    margin: 0;
    left: 0;
    top: 0;
@@ -674,11 +685,13 @@ body
 </head>
 <body>
 <div id="container">
-<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:847px;z-index:10;">
+<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:1312px;z-index:10;">
 &nbsp;</div>
-<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:827px;z-index:11;">
+<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:1292px;z-index:11;">
 &nbsp;</div>
-<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:12;">
+<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:1271px;z-index:12;">
+&nbsp;</div>
+<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:13;">
 <div id="wb_mnuFichte" style="position:absolute;left:9px;top:9px;width:200px;height:70px;z-index:0;">
 <ul id="mnuFichte" role="menubar" class="nav">
 <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./Fichte.html" target="_self">Переклади&nbsp;Й.Ґ.Фіхте</a>
@@ -711,19 +724,19 @@ body
 </div>
 <div id="wb_mnuOther" style="position:absolute;left:9px;top:359px;width:200px;height:70px;z-index:5;">
 <ul id="mnuOther" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./Pereklady.html" target="_self">Інші&nbsp;переклади</a>
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link active" href="./Pereklady.html" target="_self">Інші&nbsp;переклади</a>
 </li>
 </ul>
 </div>
 </div>
-<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:13;">
+<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:14;">
 <div id="wb_imgShapka" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:6;">
 <img src="images/Shapka.png" id="imgShapka" alt="" width="1100" height="175"></div>
 <div id="wb_TabMenuMain" style="position:absolute;left:58px;top:1px;width:600px;height:36px;z-index:7;">
 <div id="TabMenuMain">
 <ul>
 <li><a href="./index.html"><span>Головна</span></a></li>
-<li id="active"><a href="./Kontakty.html"><span>Контакти</span></a></li>
+<li><a href="./Kontakty.html"><span>Контакти</span></a></li>
 <li><a href="./Pro-movu-perekladu.html"><span>Про мову перекладу</span></a></li>
 <li><a href="./Pro-sait.html"><span>Про сайт</span></a></li>
 </ul>
@@ -733,11 +746,10 @@ body
 <div id="wb_imgZvezda_R" style="position:absolute;left:681px;top:45px;width:95px;height:80px;z-index:9;">
 <img src="images/Zvezda_R.gif" id="imgZvezda_R" alt="" width="95" height="80"></div>
 </div>
-<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1034px;width:137px;height:13px;z-index:14;">
+<div id="wb_txtCopyright" style="position:absolute;left:482px;top:982px;width:137px;height:13px;z-index:15;">
 <span style="color:#C0C0C0;font-family:Tahoma;font-size:11px;">© 2026 Minervium</span></div>
-
-<div id="wb_Image1" style="position:absolute;left:229px;top:195px;width:849px;height:804px;z-index:16;">
-<img src="images/Kontakty.jpg" id="Image1" alt="" width="849" height="805"></div>
+<div id="wb_Image1" style="position:absolute;left:231px;top:197px;width:846px;height:1269px;z-index:16;">
+<img src="images/Pereklady.jpg" id="Image1" alt="" width="846" height="1269"></div>
 </div>
 </body>
 </html>
