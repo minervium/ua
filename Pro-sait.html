@@ -752,18 +752,20 @@ body
    padding: 0;
 }
 </style>
+<script src="jquery-1.7.2.min.js"></script>
+<script src="wwb20.min.js"></script>
 </head>
-<body>
+<body onload="PlayAudio('MediaPlayer1');return false;">
 <div id="container">
-<div id="wb_layContent" style="position:absolute;left:243px;top:327px;width:679px;height:489px;z-index:10;">
+<div id="wb_layContent" style="position:absolute;left:243px;top:327px;width:679px;height:489px;z-index:11;">
 &nbsp;</div>
-<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:847px;z-index:11;">
+<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:847px;z-index:12;">
 &nbsp;</div>
-<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:827px;z-index:12;">
+<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:827px;z-index:13;">
 &nbsp;</div>
-<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:806px;z-index:13;">
+<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:806px;z-index:14;">
 &nbsp;</div>
-<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:14;">
+<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:15;">
 <div id="wb_mnuFichte" style="position:absolute;left:9px;top:9px;width:200px;height:70px;z-index:0;">
 <ul id="mnuFichte" role="menubar" class="nav">
 <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./Fichte.html" target="_self">Переклади&nbsp;Й.Ґ.Фіхте</a>
@@ -801,7 +803,7 @@ body
 </ul>
 </div>
 </div>
-<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:15;">
+<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:16;">
 <div id="wb_imgShapka" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:6;">
 <img src="images/Shapka.png" id="imgShapka" alt="" width="1100" height="175"></div>
 <div id="wb_TabMenuMain" style="position:absolute;left:58px;top:1px;width:600px;height:36px;z-index:7;">
@@ -817,16 +819,17 @@ body
 <img src="images/Zvezda_L.gif" id="imgZvezda_L" alt="" width="95" height="80"></div>
 <div id="wb_imgZvezda_R" style="position:absolute;left:681px;top:45px;width:95px;height:80px;z-index:9;">
 <img src="images/Zvezda_R.gif" id="imgZvezda_R" alt="" width="95" height="80"></div>
+
 </div>
-<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1034px;width:137px;height:13px;z-index:16;">
+<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1034px;width:137px;height:13px;z-index:17;">
 <span style="color:#C0C0C0;font-family:Tahoma;font-size:11px;">© 2026 Minervium</span></div>
-<div id="wb_layFrag" style="position:absolute;left:243px;top:209px;width:819px;height:778px;z-index:17;">
+<div id="wb_layFrag" style="position:absolute;left:243px;top:209px;width:819px;height:778px;z-index:18;">
 &nbsp;</div>
-<div id="wb_shFrag" style="position:absolute;left:243px;top:209px;width:821px;height:37px;z-index:18;">
+<div id="wb_shFrag" style="position:absolute;left:243px;top:209px;width:821px;height:37px;z-index:19;">
 <img src="images/Lenta.png" id="shFrag" alt="" width="821" height="45"></div>
-<div id="wb_lblFrag" style="position:absolute;left:276px;top:217px;width:629px;height:21px;z-index:19;">
+<div id="wb_lblFrag" style="position:absolute;left:276px;top:217px;width:629px;height:21px;z-index:20;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>Про сайт</strong></span></div>
-<div id="wb_Text2" style="position:absolute;left:258px;top:254px;width:784px;height:490px;text-align:justify;z-index:20;">
+<div id="wb_Text2" style="position:absolute;left:258px;top:254px;width:784px;height:490px;text-align:justify;z-index:21;">
 <p style="text-indent:15.13px;">Вітаю вас на сторінці, присвяченій філософській думці та її розвитку в українському інтелектуальному просторі.</p>
 <p style="text-indent:15.13px;">&nbsp;</p>
 <p style="font-weight:bold;text-indent:15.13px;">Що ви тут знайдете?</p>
@@ -843,5 +846,28 @@ body
 <p style="font-family:Arial;font-size:13px;line-height:16px;">&nbsp;</p></div>
 
 </div>
-</body>
+<script>
+  // Замените 'YOUR_SCRIPT_URL' на URL вашего развернутого веб-приложения Google Apps Script
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw_FyWTobnZj1mz2GICChccitQfTXPvGmBnCdEf5ep5mfcaVh3ykxrG99yL1r1sgeKy/exec'; 
+
+  // Асинхронная функция для отправки логов
+  async function logVisit() {
+    try {
+      // Собираем базовые данные
+      const page = window.location.pathname;
+      const ref = document.referrer || ''; 
+
+      // Формируем URL для запроса к Google Apps Script
+      const requestUrl = `${SCRIPT_URL}?page=${encodeURIComponent(page)}&ref=${encodeURIComponent(ref)}`;
+
+      // Отправляем запрос. Ответ сервера нас не интересует, просто логируем.
+      await fetch(requestUrl);
+    } catch (error) {
+      console.error('Logging failed:', error);
+    }
+  }
+
+  // Запускаем логирование при загрузке страницы
+  logVisit();
+</script></body>
 </html>
