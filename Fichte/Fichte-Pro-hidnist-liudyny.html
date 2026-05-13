@@ -44,19 +44,6 @@ h1, .h1
    padding: 0 0 0 0;
    display: inline;
 }
-h2, .h2
-{
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 16px;
-   text-decoration: none;
-   color: #FFFFFF;
-   --color: #FFFFFF;
-   background-color: transparent;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   display: inline;
-}
 #wb_layContent 
 {
    background-color: #E2EBF0;
@@ -103,21 +90,6 @@ h2, .h2
    text-align: left;
 }
 #wb_layBlue div
-{
-   text-align: left;
-}
-#wb_layTitle 
-{
-   background-color: #E2EBF0;
-   background-image: none;
-   border: 1px solid #2C5687;
-   border-radius: 0px;
-   overflow-y: hidden;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_layTitle div
 {
    text-align: left;
 }
@@ -716,11 +688,12 @@ h2, .h2
    background-color: #E2EBF0;
    background-image: none;
    border: 1px solid #2C5687;
-   border-radius: 0px;
+   border-radius: 6px;
    overflow-y: hidden;
    padding: 0;
    margin: 0;
    text-align: left;
+   box-shadow: 0px 0px 5px #2C5687;
 }
 #wb_Text1 div
 {
@@ -756,52 +729,23 @@ h2, .h2
    width: 100%;
    height: 100%;
 }
-#wb_layFrag 
+#wb_layPereklad 
 {
    background-color: #E2EBF0;
    background-image: none;
    border: 1px solid #2C5687;
-   border-radius: 0px;
+   border-radius: 6px;
    overflow-y: hidden;
    padding: 0;
    margin: 0;
    text-align: left;
+   box-shadow: 0px 0px 5px #2C5687;
 }
-#wb_layFrag div
+#wb_layPereklad div
 {
    text-align: left;
 }
-#wb_shFrag
-{
-   vertical-align: top;
-}
-#shFrag
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#wb_lblFrag 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_lblFrag div
-{
-   text-align: left;
-}
-#wb_Text2 
+#wb_txtPereklad 
 {
    background-color: transparent;
    background-image: none;
@@ -812,7 +756,7 @@ h2, .h2
    margin: 0;
    text-align: justify;
 }
-#wb_Text2
+#wb_txtPereklad
 {
    color: #000000;
    font-family: "Times New Roman";
@@ -820,12 +764,28 @@ h2, .h2
    font-size: 16px;
    line-height: 18px;
 }
-#wb_Text2 p, #wb_Text2 ul
+#wb_txtPereklad p, #wb_txtPereklad ul
 {
    margin: 0;
    padding: 0;
 }
-#wb_txtMova 
+#wb_layVstup 
+{
+   background-color: #E2EBF0;
+   background-image: none;
+   border: 1px solid #2C5687;
+   border-radius: 6px;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+   box-shadow: 0px 0px 5px #2C5687;
+}
+#wb_layVstup div
+{
+   text-align: left;
+}
+#wb_txtVstup 
 {
    background-color: transparent;
    background-image: none;
@@ -833,11 +793,20 @@ h2, .h2
    border-radius: 0px;
    padding: 0;
    margin: 0;
-   text-align: left;
+   text-align: justify;
 }
-#wb_txtMova div
+#wb_txtVstup
 {
-   text-align: left;
+   color: #000000;
+   font-family: "Times New Roman";
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 20px;
+}
+#wb_txtVstup p, #wb_txtVstup ul
+{
+   margin: 0;
+   padding: 0;
 }
 </style>
 </head>
@@ -845,13 +814,11 @@ h2, .h2
 <div id="container">
 <div id="wb_layContent" style="position:absolute;left:243px;top:327px;width:679px;height:489px;z-index:11;">
 &nbsp;</div>
-<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:847px;z-index:12;">
+<div id="wb_layWhite" style="position:absolute;left:0px;top:175px;width:1098px;height:1122px;z-index:12;">
 &nbsp;</div>
-<div id="wb_layBlue" style="position:absolute;left:10px;top:185px;width:1078px;height:827px;z-index:13;">
+<div id="wb_layBlue" style="position:absolute;left:10px;top:184px;width:1078px;height:1102px;z-index:13;">
 &nbsp;</div>
-<div id="wb_layTitle" style="position:absolute;left:229px;top:195px;width:848px;height:806px;z-index:14;">
-&nbsp;</div>
-<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:15;">
+<div id="wb_MasterMain" style="position:absolute;left:11px;top:186px;width:209px;height:429px;z-index:14;">
 <div id="wb_mnuFichte" style="position:absolute;left:9px;top:9px;width:200px;height:70px;z-index:0;">
 <ul id="mnuFichte" role="menubar" class="nav">
 <li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./../Fichte.html" target="_self">Переклади&nbsp;Й.Ґ.Фіхте</a>
@@ -889,7 +856,7 @@ h2, .h2
 </ul>
 </div>
 </div>
-<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:16;">
+<div id="wb_MasterUp" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:15;">
 <div id="wb_imgShapka" style="position:absolute;left:0px;top:0px;width:1100px;height:175px;z-index:6;">
 <img src="images/Shapka.png" id="imgShapka" alt="" width="1100" height="175"></div>
 <div id="wb_TabMenuMain" style="position:absolute;left:58px;top:1px;width:600px;height:36px;z-index:7;">
@@ -907,26 +874,20 @@ h2, .h2
 <img src="images/Zvezda_R.gif" id="imgZvezda_R" alt="" width="95" height="80"></div>
 
 </div>
-<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1034px;width:137px;height:13px;z-index:17;">
-<span style="color:#C0C0C0;font-family:Tahoma;font-size:11px;">© 2026 Minervium</span></div>
-<div id="wb_Text1" style="position:absolute;left:243px;top:206px;width:819px;height:68px;z-index:18;">
+<div id="wb_txtCopyright" style="position:absolute;left:482px;top:1310px;width:137px;height:16px;z-index:16;">
+<span style="color:#C0C0C0;font-family:Tahoma;font-size:13px;">© 2026 Minervium</span></div>
+<div id="wb_Text1" style="position:absolute;left:242px;top:195px;width:828px;height:68px;z-index:17;">
 &nbsp;</div>
-<div id="wb_txtTitle" style="position:absolute;left:255px;top:217px;width:577px;height:45px;z-index:19;">
+<div id="wb_txtTitle" style="position:absolute;left:255px;top:206px;width:577px;height:45px;z-index:18;">
 <h1>Фіхте, Йоганн Ґотліб<br>Про гідність людини (Über die Würde des Menschen, 1794)</h1></div>
-<div id="wb_DownloadPDF" style="position:absolute;left:980px;top:207px;width:70px;height:70px;z-index:20;">
+<div id="wb_DownloadPDF" style="position:absolute;left:980px;top:196px;width:70px;height:70px;z-index:19;">
 <a href="https://minervium.github.io/ua/pdf/Й. Ґ. Фіхте. Про гідність людини.pdf"><img src="images/&#1047;&#1072;&#1074;&#1072;&#1085;&#1090;&#1072;&#1078;&#1080;&#1090;&#1080;%20PDF.png" id="DownloadPDF" alt="Завантажити PDF" title="Завантажити PDF" width="70" height="70"></a></div>
-<div id="wb_layFrag" style="position:absolute;left:243px;top:349px;width:819px;height:641px;z-index:21;">
+<div id="wb_layPereklad" style="position:absolute;left:243px;top:628px;width:828px;height:641px;z-index:20;">
 &nbsp;</div>
-<div id="wb_shFrag" style="position:absolute;left:243px;top:349px;width:821px;height:37px;z-index:22;">
-<img src="images/Lenta.png" id="shFrag" alt="" width="821" height="45"></div>
-<div id="wb_lblFrag" style="position:absolute;left:276px;top:357px;width:629px;height:18px;z-index:23;">
-<h2>Про гідність людини</h2></div>
-<div id="wb_Text2" style="position:absolute;left:258px;top:394px;width:784px;height:588px;text-align:justify;z-index:24;">
-<p style="text-indent:22.67px;">Переклад виконаний А. В. Колесниковим за виданням: <span style="font-style:italic;">Fichte J. G.</span> Sämtliche Werke: Bd. 1–8 / Hrsg. von I. H. Fichte. Berlin: Veit 1845–1846. Bd. I. S. 412–416.</p>
+<div id="wb_txtPereklad" style="position:absolute;left:260px;top:671px;width:786px;height:592px;text-align:justify;z-index:21;">
+<p style="font-size:17px;line-height:20px;text-indent:22.67px;">Промовлено Й. Ґ. Фіхте на завершення його філософських лекцій. 1794</p>
 <p style="font-size:17px;line-height:20px;text-indent:22.67px;">&nbsp;</p>
-<p style="font-size:17px;line-height:20px;text-indent:22.67px;">Промовлено Й. Ґ. Фіхте на закінчення його філософських лекцій. 1794</p>
-<p style="font-size:17px;line-height:20px;text-indent:22.67px;">&nbsp;</p>
-<p style="margin:0 0 0 283.2px;text-indent:22.67px;">Не як дослідження, а як вилив найзахопленішого почуття після дослідження, присвячує своїм покровителям і друзям на згадку блаженних годин, які він провів із ними у спільному прагненні до істини, ці аркуші автор.</p>
+<p style="margin:0 0 0 283.2px;text-indent:22.67px;">Не як дослідження, а як вилив найзахопленішого почуття <span style="font-style:italic;">після</span> дослідження, присвячує своїм покровителям і друзям на згадку блаженних годин, які він провів із ними у спільному прагненні до істини, ці аркуші <span style="letter-spacing:2.67px;">автор</span>.</p>
 <p style="font-size:17px;line-height:20px;text-indent:22.67px;">&nbsp;</p>
 <p style="font-size:17px;line-height:20px;text-indent:22.67px;">Ми повністю виміряли людський дух; – ми заклали фундамент, на якому можна збудувати наукову систему як влучне представлення <span style="font-style:italic;">первісної</span> системи в людині. На завершення ми робимо короткий огляд цілого.</p>
 <p style="font-size:17px;line-height:20px;text-indent:22.67px;">Філософія вчить нас відшукувати все в Я. Лише через Я приходять порядок і гармонія в мертву безформну масу. Тільки від людини поширюється <span style="font-style:italic;">правиловість</span>&nbsp;<span style="font-style:italic;">(Regelmäßigkeit)</span> навколо людини аж до межі її спостереження, – і як вона просуває цю межу далі, так далі просуваються порядок і гармонія. Його спостереження відводить до нескінченності різному, – кожному своє місце, щоб жодне не витісняло іншого; воно приносить єдність у нескінченну різність. Через нього світові тіла тримаються разом і стають лише <span style="font-style:italic;">одним</span> організованим тілом; через нього сонця обертаються на своїх відведених орбітах. Через Я є наявною величезна послідовність щаблів від лишайника до серафима; у <span style="font-style:italic;">ньому</span> є система всього духовного світу, і людина по праву очікує, що закон, який вона дає собі й йому, мусить бути для нього чинним; по праву очікує майбутнього загального його визнання.<span style="font-family:Calibri;">&nbsp;</span>У Я лежить надійна запорука того, що від нього порядок і гармонія поширюватимуться в нескінченне, де тепер іще їх немає; що з культурою людини, яка посувається, водночас посуватиметься й культура всесвіту.<span style="font-family:Calibri;">&nbsp;</span>Усе, що тепер іще є неформним і безладним, через людину розчиниться в найпрекраснішому порядку, а те, що вже тепер є гармонійним, ставатиме – за досі нерозвиненими законами – дедалі гармонійнішим.<span style="font-family:Calibri;">&nbsp;</span>Людина вноситиме порядок у тисняву й план у загальне руйнування; через нього тління буде утворювати, і смерть кликатиме до нового прекрасного життя.</p>
@@ -942,8 +903,17 @@ h2, .h2
 <p style="text-indent:22.67px;">*) Навіть не знаючи моєї системи, неможливо вважати цю думку спінозистською, якщо тільки принаймні хочуть оглянути хід цього міркування в цілому. Єдність чистого духу є для мене <span style="font-style:italic;">недосяжним ідеалом</span>; кінцевою метою, яка, однак, ніколи не стає дійсною.</p>
 <p style="font-family:Arial;font-size:13px;line-height:16px;">&nbsp;</p></div>
 
-<div id="wb_txtMova" style="position:absolute;left:258px;top:280px;width:804px;height:58px;z-index:26;">
-<span style="color:#000000;font-family:'Times New Roman';font-size:17px;"><strong>Зауваження щодо мови перекладу.<br></strong>У перекладі використано мовні рішення, що можуть відрізнятися від сучасних нормативних рекомендацій. Пояснення принципів мови перекладу подано на окремій сторінці: <a href="./../Pro-movu-perekladu.html" target="_blank">Про мову перекладу</a></span></div>
+<div id="wb_layVstup" style="position:absolute;left:242px;top:277px;width:828px;height:333px;z-index:23;">
+&nbsp;</div>
+<div id="wb_txtVstup" style="position:absolute;left:260px;top:321px;width:796px;height:269px;text-align:justify;z-index:24;">
+<p style="text-indent:22.67px;">Фіхте читав у Цюриху, в будинку Йоганна Каспара Лафатера, лекції про поняття та систему критичної філософії з середини лютого до кінця квітня 1794 року – «перед півдюжиною справді добірних цюрихців». Цикл цюрихських лекцій завершився незадовго до його від’їзду до Єни наприкінці квітня того ж року. «На завершення своїх філософських лекцій» Фіхте виголосив прощальну промову, яку також наказав надрукувати. Ці міркування, присвячені «своїм покровителям і друзям» «на згадку блаженних годин, які він провів із ними у спільному прагненні до істини», він хотів бачити сприйнятими «не як дослідження, а як вилив найзахопленішого почуття після дослідження». Промова мала не філософськи пояснити значення трансцендентальної філософії для людського життя, а виразити його поетичною мовою.</p>
+<p style="text-indent:22.67px;">Імовірно, Фіхте виголосив цю промову в останній день лекцій – 25 або 26 квітня 1794 року. Встановити, коли саме її було надруковано, нині вже неможливо, однак це сталося не пізніше червня 1794 року. </p>
+<p style="text-indent:22.67px;">&nbsp;</p>
+<p style="text-indent:22.67px;">Перекладено за виданням:</p>
+<p style="text-indent:22.67px;">Fichte J. G. <span style="font-style:italic;">Sämtliche Werke</span>: Bd. 1–8 / Hrsg. von I. H. Fichte. Berlin: Veit, 1845–1846. Bd. I. S. 412–416.</p>
+<p style="font-family:Arial;font-size:13px;line-height:16px;text-indent:22.67px;"><span style="font-family:Times New Roman;font-size:17px;line-height:20px;">© А. В. Колесников, переклад, 2026.</span></p></div>
+<img src="images/img0001.png" id="banVstup" alt="Вступна примітка" style="border-width:0;position:absolute;left:242px;top:277px;width:830px;height:37px;z-index:25;" width="830" height="37">
+<img src="images/img0002.png" id="banPereklad" alt="Про гідність людини" style="border-width:0;position:absolute;left:243px;top:628px;width:830px;height:37px;z-index:26;" width="830" height="37">
 </div>
 <script>
   // Замените 'YOUR_SCRIPT_URL' на URL вашего развернутого веб-приложения Google Apps Script
